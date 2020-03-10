@@ -17,8 +17,8 @@ public class EmailPropertiesController
 	}
 
 	@GetMapping("/get/all")
-	public EmailProperties getAllEmailProperties()
+	public String getAllEmailProperties()
 	{
-		return emailProperties;
+		return emailProperties.getTo();
 	}
 }
